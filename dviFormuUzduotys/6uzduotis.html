@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="rezultatai.html" method="get">
+        <div>
+            <label for="vartotojas">user ID:</label>
+            <input type="text" name="vartotojas" id="vartotojas">
+        </div>
+        <br>
+        <div>
+            <label for="slaptazodis">Slaptažodis: (mažiausiai 8 simbolių)</label>
+            <input type="password" id="slaptazodis" name="slaptazodis" minlength="7" maxlength="12" required>
+        </div>
+        <br>
+        <div>
+            <label for="vardas">Vardas: (galima naudoti tik raides)</label>
+            <input type="text" id="vardas" name="vardas" pattern="[A-Z][a-z]*" required>
+        </div>
+        <br>
+        <div>
+            <label for="adresas">Adresas:</label>
+            <input type="text" id="adresas" name="adresas">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="salis">Šalis</label>
+            <select name="adresai" id="adresuList">
+                <option value="" disabled selected>Pasirinkite savo šalį</option>
+                <option value="lietuva">Lietuva</option>
+                <option value="latvija">Latvija</option>
+                <option value="estija">Estija</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="kodas">Zip kodas:</label>
+            <input type="number" id="kodas" name="kodas" minlength="1" required>
+        </div>
+        <br>
+        <div>
+            <label for="pastas">El.paštas:</label>
+            <input type="email" id="pastas" name="pastas" required>
+        </div>
+        <br>
+        <div>
+            <p>Lytis:</p>
+            <label for="vyras">Vyras</label>
+            <input type="radio" id="vyras" name="lytis">
+        </div>
+        <br>
+        <div>
+            <label for="moteris">Moteris</label>
+            <input type="radio" id="moteris" name="lytis">
+        </div>
+        <br>
+        <div>
+            <p>Kalbos, kurias mokate:</p>
+            <label for="anglu">Anglų kalba</label>
+            <input type="checkbox" name="anglu" id="anglu">
+        </div>
+        <br>
+        <div>
+            <label for="vokieciu">Vokiečių kalba</label>
+            <input type="checkbox" name="vokieciu" id="vokieciu">
+        </div>
+        <br>
+        <div>
+            <label for="prancuzu">Rrancuzų kalba</label>
+            <input type="checkbox" name="prancuzu" id="prancuzu">
+        </div>
+        <br>
+        <div>
+            <label for="rusu">Rusų kalba</label>
+            <input type="checkbox" name="rusu" id="rusu">
+        </div>
+        <br>
+        <div>
+            <label for="lietuviu">lietuvių kalba</label>
+            <input type="checkbox" name="lietuviu" id="lietuviu">
+        </div>
+        <br>
+        <div>
+            <label for="apie">Apie:</label><textarea id="apie" name="apie" rows="10" cols="50"></textarea>
+        </div>
+        <br>
+        <button class="mygtukas" type="button">Pateikti</button>
+    </form>
+</body>
+</html>

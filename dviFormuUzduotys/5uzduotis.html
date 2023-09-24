@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="rezultatai.html" method="get">
+        <div>
+            <label for="Vardas">Vardas:</label>
+            <input type="text" name="Vardas" id="Vardas" required>
+        </div>
+        <br>
+        <div>
+            <label for="Pavarde">Pavardė:</label>
+            <input type="text" name="Pavarde" id="Pavarde" required>
+        </div>
+        <br>
+        <div>
+            <label for="Pastas">El.paštas:</label>
+            <input type="email" name="Pastas" id="Pastas" required>
+        </div>
+        <br>
+        <div>
+            <label for="Slaptazodis">Slaptažodis:</label>
+            <input type="password" name="Slaptazodis" id="Slaptazodis" minlength="8" required>
+        </div>
+        <br>
+        <div>
+            <fieldset style="width: 250px;">
+            <legend>Adresas</legend>
+                <p>Gatvė: <br> <input type="text" name="adresas" required></p>
+                <p>Namo numeris: <input type="text" name="namoNr" required></p>
+                <p>Miestas: <br> <select style="width: 180px;" id="miestai" name="miestai" required></p>
+                    <option value="kaunas">Kaunas</option>
+                    <option value="vilnius">Vilnius</option>
+                    <option value="klaipeda">Klaipėda</option>
+                    <option value="siauliai">Šiauliai</option>
+                </select>
+            </fieldset>
+        </div>
+        <div>
+            <p>Apmokėjimo būdas:</p>
+            <label for="elBank">El.bankininkyste</label>
+            <input type="radio" name="atsiskaitymas" value="elBank" required>
+        </div>
+        <div>
+            <label for="debKortele">Debetine kortele</label>
+            <input type="radio" name="atsiskaitymas" value="debKortele" required>
+        </div>
+        <div>
+            <label for="grynais">Grynais atsiemimo metu</label>
+            <input type="radio" name="atsiskaitymas" value="grynais">
+        </div>
+        <div>
+            <label for="vakPagaminimu">Vakarienės pagaminimu</label>
+            <input type="radio" name="atsiskaitymas" value="vakPagaminimu">
+        </div>
+        <div>
+            <p>Pasirinkite dvi nemokamas dovanėles:</p>
+            <label for="snikeris">Snickers</label>
+            <!-- ar cia imanoma required? -->
+            <input type="checkbox" name="snikeris" id="snikeris">
+        </div>
+        <div>
+            <label for="twixas">Twix</label>
+            <input type="checkbox" name="twixas" id="twixas">
+        </div>
+        <div>
+            <label for="bauntis">Bounty</label>
+            <input type="checkbox" name="bauntis" id="bauntis">
+        </div>
+        <div>
+            <label for="marsas">Mars</label>
+            <input type="checkbox" name="marsas" id="marsas">
+        </div>
+        <div>
+            <br>
+            <label for="neaktyvus">Komentarai, pastabos</label>
+            <br>
+            <!-- hidden ar disabled? -->
+            <input type="hidden" name="neaktyvus"disabled>
+        </div>
+        <button class="mygtukas" type="button">Užsakyti</button>
+
+    </form>
+</body>
+</html>

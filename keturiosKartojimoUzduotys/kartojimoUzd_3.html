@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <caption>
+        <h1>Pristatymo adresai</h1>
+    </caption>
+<form>
+    <p>Pirkėjas <u>Gavėjas</u></p>
+    <label for="vardas">Vardas</label><br>
+    <input type="text" id="vardas" name="vardas" required>&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="vardas">Pavardė</label>
+    <input type="text" id="pavarde" name="pavarde" required>
+    <br>
+    <label for="telefonas">Telefonas</label><br>
+    <input type="tel" id="telefonas" name="telefonas" placeholder="Pvz: +37066105555" maxlength="12" required>&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="pavadinimas">Įmonės pavadinimas</label>
+    <input type="text" id="pavadinimas" name="pavadinimas" required>
+    <br>
+    <label for="miestas">Miestas </label><br>
+    <select name="miestas" required>
+        <option value=""disabled selected hidden>--pasirinkite--</option> <!-- verta isidemeti -->
+        <option value="kaunas">Kaunas</option>
+        <option value="vilnius">Vilnius</option>
+        <option value="klaipeda">Klaipeda</option>
+        <option value="siauliai">Siauliai</option>
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="adresas">Adresas</label>
+    <input type="text" id="adresas" name="adresas" required>
+    <br>
+    <label for="kodas">Pašto kodas(tik skaičiai)</label><br>
+    <input type="text" id="kodas" name="kodas" pattern="[0-9]{5}" maxlength="5" inputmode="numeric" required> <!-- verta isidemeti -->
+    <br>
+    <br>
+    <input type="reset" value="Atšaukti"> <input type="submit" value="Išsaugoti pakeitimus">
+</form>
+</body>
+</html>
